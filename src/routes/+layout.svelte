@@ -1,49 +1,65 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import { onMount } from 'svelte'
-  import t from '$i18n';
+	import { onMount } from 'svelte';
+	import { onNavigate } from '$app/navigation';
 
-  onMount(async () => {
-    console.log(t('hello'));
-  })
+	onNavigate(() => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(() => {
+				return new Promise(resolve);
+			});
+		});
+	});
 </script>
 
-<!-- App Shell -->
-<AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<AppBar>
-			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
+<header class="print:hidden grid grid-cols-12 gab-6 container mx-auto my-10">
+	<div class="logo col-span-3 pl-6">Fabrice D. Siyapdje</div>
+	<nav style="justify-self: end;" class="col-span-9 flex justify-around  h-[14vh] mt-2">
+		<ul class="flex nav-links gap-8 text-2xl">
+			<li>
+				<a href="/">
+					Home
 				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
+			</li>
+			<li>
+				<a href="/about">
+					<!-- <span class="badge badge-xs badge-info" /> -->
+					About
 				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
+			</li>
+			<li>
+				<a href="/projects">
+					<!-- <span class="badge badge-xs badge-info" /> -->
+					Projects
 				</a>
-			</svelte:fragment>
-		</AppBar>
-	</svelte:fragment>
+			</li>
+			<li>
+				<a href="/blog">
+					<!-- <span class="badge badge-xs badge-info" /> -->
+					Blog
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div class="grid grid-cols-12 gab-6 container mx-auto my-10">
 	<slot />
-</AppShell>
+</div>
+
+<style>
+	.logo {
+		font-size: 2rem;
+	}
+
+	.logo:hover {
+		cursor: default;
+	}
+
+	.nav-links {
+		font-size: 1.5rem;
+	}
+</style>

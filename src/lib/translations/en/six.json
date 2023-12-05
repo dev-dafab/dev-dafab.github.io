@@ -1,0 +1,9 @@
+{
+	"occupation": "Frontend developer",
+	"company": "14 pers. | 100% | automotive industry",
+	"title": "Consolidation and centralisation of Backend and Frontend Commponent/API",
+	"description": "I led the development of a consistent component library for use across all products in the organization, ranging from basic to complex components, including color authority. The library ensured consistent and cohesive user experiences throughout the organization's products. It provided reusable and customizable components, reducing development time and increasing consistency. Our team ensured accessibility and responsiveness of the library, making it suitable for a wide range of devices and users. Additionally, we broke down monolithic backend services into different microservices, including authentication, user management, and vehicle telematics, which could be consumed to implement business-specific rules for different products. This allowed for more agile development and efficient use of resources.",
+	"start": "2015-12-01",
+	"end": "2018-01-25",
+	"tags": ["reactjs", "typescript", "javascript", "java", "spring boot", "gitlab"]
+}

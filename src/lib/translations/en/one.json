@@ -1,0 +1,20 @@
+{
+	"occupation": "Lead developer",
+	"company": "10+ pers. | 100% | Tourism branch",
+	"title": "Accommodation Management Platform",
+	"description": "Designed and developed a  accommodation management system encompassing room-type categorization, facility management, room-view preferences, service categories, and service types. Implemented user-friendly interfaces for efficient property and room management, enabling guests to make reservations based on preferences. Contributed to enhanced guest experiences and property efficiency through a meticulously organized system that fDéveloppeur principalacilitated streamlined operations and personalized services.",
+	"start": "2021-11-01",
+	"end": "2023-10-24",
+	"tags": [
+		"java",
+		"springboot",
+		"kubernetes",
+		"aws",
+		"angular",
+		"javascript",
+		"nodejs",
+		"micro-frontend",
+		"micro-service",
+		"gitlab"
+	]
+}

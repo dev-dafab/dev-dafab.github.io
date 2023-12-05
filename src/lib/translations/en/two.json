@@ -1,0 +1,9 @@
+{
+	"occupation": "Lead frontend developer",
+	"company": "10+ pers. | 70% | Insurance industry",
+	"title": "Self-service cross-selling System Project for Insurance Tariffing, Offers, and Applications",
+	"description": "Led the development of a cutting-edge self-service cross-selling system. Orchestrated requirements analysis, designed a user-centric system, and seamlessly integrated external data sources for real-time access. Implemented tariffing, offer generation, and application processes, driving automation and efficiency. Ensured data security and compliance with industry standards. Rigorously tested and provided user documentation for seamless adoption. Achieved successful deployment, ongoing support, and performance optimization. Enhanced customer engagement, reduced processing times, and enabled effective cross-selling of insurance products. The platform enabled customers to request certification, change their address, bank information and email address. The self-service cross-selling product simulated questions based on customer-provided information and suggested the most fitting proposition. The cross-selling function without brokers thus improving efficiency and reducing costs of the various insurance products.",
+	"start": "2020-07-01",
+	"end": "2021-10-20",
+	"tags": ["openshift", "nginx", "angular", "typescript", "javascript", "java", "gitlab"]
+}
