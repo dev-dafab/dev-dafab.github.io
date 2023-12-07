@@ -3,6 +3,7 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 	import { onNavigate } from '$app/navigation';
+	import Header from './Header.svelte';
 
 	onNavigate(() => {
 		if (!document.startViewTransition) return;
@@ -13,53 +14,30 @@
 			});
 		});
 	});
+
+	const toggleMenu = () => {};
+	const navItems = [
+		{ href: '/', text: 'Home' },
+		{ href: '/about', text: 'About' },
+		{ href: '/projects', text: 'Projects' },
+		{ href: '/blog', text: 'Blog' }
+	];
 </script>
 
-<header class="print:hidden grid grid-cols-12 gab-6 container mx-auto my-10">
-	<div class="logo col-span-3 pl-6">Fabrice D. Siyapdje</div>
-	<nav style="justify-self: end;" class="col-span-9 flex justify-around  h-[14vh] mt-2">
-		<ul class="flex nav-links gap-8 text-2xl">
-			<li>
-				<a href="/">
-					Home
-				</a>
-			</li>
-			<li>
-				<a href="/about">
-					<!-- <span class="badge badge-xs badge-info" /> -->
-					About
-				</a>
-			</li>
-			<li>
-				<a href="/projects">
-					<!-- <span class="badge badge-xs badge-info" /> -->
-					Projects
-				</a>
-			</li>
-			<li>
-				<a href="/blog">
-					<!-- <span class="badge badge-xs badge-info" /> -->
-					Blog
-				</a>
-			</li>
-		</ul>
-	</nav>
-</header>
-
-<div class="grid grid-cols-12 gab-6 container mx-auto my-10">
+<Header {navItems} />
+<main role="main" class="grid grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
 	<slot />
-</div>
+</main>
 
 <style>
-	.logo {
-		font-size: 2rem;
-	}
-
-	.logo:hover {
-		cursor: default;
-	}
-
 	.nav-links {
 		font-size: 1.5rem;
+	}
+
+	.hamburger-icon span {
+		width: 100%;
+		height: 2px;
+		background-color: black;
+		transition: all 0.3 ease-in-out;
 	}
 </style>

@@ -1,10 +1,10 @@
 <script>
 	import Icon from '@iconify/svelte';
 </script>
+
 <section id="about">
 	<div class="section-container">
-		<div class="section__pic-container">
-		</div>
+		<div class="section__pic-container" />
 		<div class="about-details-container">
 			<div class="about-containers">
 				<div class="details-container">
@@ -16,17 +16,17 @@
 				</div>
 				<div class="details-container">
 					<div class="w-full flex justify-around">
-            <Icon icon="zondicons:education" class="cursor-pointer h-[2rem] w-[2rem]"/>
+						<Icon icon="zondicons:education" class="cursor-pointer h-[2rem] w-[2rem]" />
 					</div>
 					<h3 class="font-lg">Education</h3>
 					<p>B.Sc. Bachelors Degree<br /></p>
 				</div>
 				<div class="details-container">
 					<div class="w-full flex justify-around">
-            <Icon icon="fontisto:persons" class="cursor-pointer h-[2rem] w-[2rem]" />
+						<Icon icon="fontisto:persons" class="cursor-pointer h-[2rem] w-[2rem]" />
 					</div>
 					<h3 class="font-lg">References</h3>
-					<p>7 satified client<br /> Automobile - Insurance - Accommodation </p>
+					<p>7 satified client<br /> Automobile - Insurance - Accommodation</p>
 				</div>
 			</div>
 		</div>

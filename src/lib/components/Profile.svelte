@@ -18,7 +18,6 @@
 					<h1 class="text-xl font-bold">Fabrice Dufils Siyapdje</h1>
 				</div>
 				<p class="text-gray-600">Fullstack Web Developer</p>
-
 				<div class="flex justify-center items-center">
 					<a
 						class="text-gray-700 hover:text-orange-600"
@@ -51,11 +50,11 @@
 		</div>
 	</div>
 {:else}
-	<section class="col-span-12 flex justify-center gap-20 h-[80vh]">
-		<div class="section__pic-container">
+	<section class="col-span-12 flex flex-col lg:flex-row justify-center gap-20 main-section">
+		<div class="section__pic-container h-56 w-56 lg:h-96 lg:w-96 justify-center self-center flex">
 			<img src="/me.jpeg" alt="John Doe profile picture" class="rounded-full" />
 		</div>
-		<div class="section__text">
+		<div class="section__text text-center self-center">
 			<p class="section__text__p1">Hello, I'm</p>
 			<h1 class="title">Fabrice D. Siyapdje</h1>
 			<p class="section__text__p2">Fullstack Web Developer</p>
@@ -82,18 +81,6 @@
 {/if}
 
 <style>
-	.section__pic-container {
-		display: flex;
-		height: 400px;
-		width: 400px;
-		margin: auto 0;
-	}
-
-	.section__text {
-		align-self: center;
-		text-align: center;
-	}
-
 	.section__text p {
 		font-weight: 600;
 	}

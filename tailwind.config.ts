@@ -6,6 +6,7 @@ import { skeleton } from '@skeletonlabs/tw-plugin';
 
 export default {
 	darkMode: 'class',
+	mode: 'jit',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	daisyui: {
 		themes: [
