@@ -8,9 +8,9 @@
 <section class="rounded-lg col-span-12">
 	<About />
 </section>
-<section class="rounded-lg col-span-12">
-	<Skills />
-</section>
+<!-- <section class="col-span-12 flex flex-col lg:flex-row justify-center gap-20 main-section"> -->
+<!-- 	<Skills /> -->
+<!-- </section> -->
 
 <style>
 	.profile {

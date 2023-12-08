@@ -2,10 +2,8 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<hr class="my-6 border-t border-gray-300" />
-
 <div class="flex flex-col">
-	<div class="skill-set">
+	<div class="skill-set w-full">
 		<h2>Database:</h2>
 		<ul>
 			<li>
