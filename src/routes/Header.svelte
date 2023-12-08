@@ -47,6 +47,7 @@
 
 <svelte:window bind:scrollY bind:innerWidth={screenSize} />
 
+<!-- col-span-12 flex flex-col lg:flex-row justify-center gap-20 main-section -->
 <header class="fixed w-full z-10 top-0 min-h-12" class:bg-gray-100={scrollY > 76}>
 	<div class="w-full lg:w-2/3 mx-auto flex h-full">
 		<div class="w-full px-4 lg:px-0 leading-normal h-full grid grid-cols-5 items-center">
@@ -64,12 +65,27 @@
 				<span class="sr-only">Menu</span>
 				<div
 					data-open={menuExpanded === true || undefined}
-					class="relative flex overflow-hidden items-center justify-center rounded-full w-[35px] h-[35px] transform transition-all ring-0 ring-gray-300 hover:ring-8 data-[open=true]:ring-4 ring-opacity-30 duration-200 shadow-md"
+					class="relative flex overflow-hidden items-center justify-center rounded-full w-[65px] h-[65px] transform transition-all ring-0 ring-gray-300 hover:ring-8 data-[open=true]:ring-4 ring-opacity-30 duration-200"
 				>
 					<div
 						data-open={menuExpanded === true || undefined}
-						class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden data-[open=true]:translate-x-1.5"
+						class="flex flex-col justify-between w-[30px] h-[30px] transform transition-all duration-300 origin-center overflow-hidden data-[open=true]:translate-x-1.5"
 					>
+						<!-- .hamburger-icon { -->
+						<!--   display: flex; -->
+						<!--   flex-direction: column; -->
+						<!--   justify-content: space-between; -->
+						<!--   height: 24px; -->
+						<!--   width: 30px; -->
+						<!--   cursor: pointer; -->
+						<!-- } -->
+						<!---->
+						<!-- .hamburger-icon span { -->
+						<!--   width: 100%; -->
+						<!--   height: 2px; -->
+						<!--   background-color: black; -->
+						<!--   transition: all 0.3 ease-in-out; -->
+						<!-- } -->
 						<div
 							data-open={menuExpanded === true || undefined}
 							class="bg-black h-[2px] w-7 transform transition-all duration-300 origin-left data-[open=true]:rotate-[42deg] data-[open=true]:w-2/3 delay-150"
