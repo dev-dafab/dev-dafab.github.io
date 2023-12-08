@@ -28,16 +28,3 @@
 <main role="main" class="grid grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
 	<slot />
 </main>
-
-<style>
-	.nav-links {
-		font-size: 1.5rem;
-	}
-
-	.hamburger-icon span {
-		width: 100%;
-		height: 2px;
-		background-color: black;
-		transition: all 0.3 ease-in-out;
-	}
-</style>
