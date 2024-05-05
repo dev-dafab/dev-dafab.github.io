@@ -8,7 +8,6 @@
 	};
 
 	export let navItems: Array<ItemType> = [];
-	export let fullScreenLayout = false;
 
 	let navigationList: HTMLUListElement;
 	let navToggle: HTMLButtonElement;
@@ -47,12 +46,14 @@
 
 <svelte:window bind:scrollY bind:innerWidth={screenSize} />
 
+
 <!-- col-span-12 flex flex-col lg:flex-row justify-center gap-20 main-section -->
 <header class="fixed w-full z-10 top-0 min-h-12 flex items-center" class:bg-gray-100={scrollY > 76}>
-	<div class="w-full leading-normal container mx-auto grid grid-cols-12">
-		<p class="col-span-6 cursor-pointer logo" href={homeUrl}>
-			<span class="font-bold">Fabrice Dufils Siyapdje</span>
+	<div class="w-full leading-normal container inline-flex justify-between mx-auto">
+		<p class="cursor-pointer font-bold text-[2rem]" href={homeUrl}>
+			Fabrice Dufils Siyapdje
 		</p>
+
 
 		<button
 			on:click|preventDefault|stopPropagation={toggleMenuClicked}
@@ -120,7 +121,7 @@
 		position: absolute;
 		aspect-ratio: 1;
 		width: 2rem;
-		top: calc(var(--header-height) / 3);
+		top: calc(var(--header-height) / 3.4);
 		right: 2rem;
 		z-index: 9999;
 	}

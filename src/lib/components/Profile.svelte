@@ -21,7 +21,7 @@
 				<div class="flex justify-center items-center">
 					<a
 						class="text-gray-700 hover:text-orange-600"
-						aria-label="Visit TrendyMinds LinkedIn"
+						aria-label="LinkedIn"
 						href="http://lol"
 						target="_blank"
 					>
@@ -62,19 +62,21 @@
 				<a class="btn btn-color-2" href="/resume"> Download CV </a>
 				<button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info </button>
 			</div>
-			<div id="socials-container">
-				<img
-					src="/linkedin.png"
-					alt="My LinkedIn profile"
-					class="h-[2rem]"
-					onclick="location.href='https://linkedin.com/'"
-				/>
-				<img
-					src="/github.png"
-					alt="My Github profile"
-					class="h-[2rem]"
-					onclick="location.href='https://github.com/'"
-				/>
+			<div class="flex justify-center gap-4 mt-4">
+        <a href="https://www.linkedin.com/in/fabrice-dufils-siyapdje-3b4a8288" target='_blank'>
+          <img
+            src="/linkedin.png"
+            alt="My LinkedIn profile"
+            class="h-[3rem]"
+          />
+        </a>
+        <a href="https://github.com/dev-dafab" target='_blank'>
+          <img
+            src="/github.png"
+            alt="My github profile link"
+            class="h-[3rem]"
+          />
+        </a>
 			</div>
 		</div>
 	</section>
@@ -96,13 +98,6 @@
 	.title {
 		font-size: 3rem;
 		text-align: center;
-	}
-
-	#socials-container {
-		display: flex;
-		justify-content: center;
-		margin-top: 1rem;
-		gap: 1rem;
 	}
 
 	.btn-container {

@@ -25,6 +25,6 @@
 </script>
 
 <Header {navItems} />
-<main role="main" class="grid grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
+<main role="main" class="grid grid-cols-0 md:grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
 	<slot />
 </main>
