@@ -2,11 +2,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<section id="about">
-	<div class="section-container">
-		<div class="section__pic-container" />
-		<div class="about-details-container">
-			<div class="about-containers">
+<section id="about" class="gap-8 my-8 flex flex-col lg:flex-row">
 				<div class="details-container">
 					<div class="w-full flex justify-around">
 						<img src="/experience.png" alt="Experience icon" class="cursor-pointer h-[2rem]" />
@@ -14,6 +10,7 @@
 					<h3>Experience</h3>
 					<p>7+ years <br />Fullstack web Development</p>
 				</div>
+
 				<div class="details-container">
 					<div class="w-full flex justify-around">
 						<Icon icon="zondicons:education" class="cursor-pointer h-[2rem] w-[2rem]" />
@@ -21,6 +18,7 @@
 					<h3 class="font-lg">Education</h3>
 					<p>B.Sc. Bachelors Degree<br /></p>
 				</div>
+
 				<div class="details-container">
 					<div class="w-full flex justify-around">
 						<Icon icon="fontisto:persons" class="cursor-pointer h-[2rem] w-[2rem]" />
@@ -28,9 +26,6 @@
 					<h3 class="font-lg">References</h3>
 					<p>7 satified client<br /> Automobile - Insurance - Accommodation</p>
 				</div>
-			</div>
-		</div>
-	</div>
 </section>
 
 <style>
@@ -43,6 +38,7 @@
 		margin-bottom: 2rem;
 		margin-top: 2rem;
 	}
+
 
 	.about-details-container {
 		justify-content: center;

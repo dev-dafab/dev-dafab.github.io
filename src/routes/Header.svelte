@@ -121,7 +121,7 @@
 		position: absolute;
 		aspect-ratio: 1;
 		width: 2rem;
-		top: calc(var(--header-height) / 3.4);
+		top: calc(var(--header-height) / 3.6);
 		right: 2rem;
 		z-index: 9999;
 	}
