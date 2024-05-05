@@ -58,10 +58,10 @@
 			<p class="section__text__p1">Hello, I'm</p>
 			<h1 class="title">Fabrice D. Siyapdje</h1>
 			<p class="section__text__p2">Fullstack Web Developer</p>
-			<div class="btn-container">
-				<a class="btn btn-color-2" href="/resume"> Download CV </a>
-				<button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info </button>
-			</div>
+			<!-- <div class="btn-container"> -->
+			<!-- 	<a class="btn btn-color-2" href="/resume"> Download CV </a> -->
+			<!-- 	<button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info </button> -->
+			<!-- </div> -->
 			<div class="flex justify-center gap-4 mt-4">
         <a href="https://www.linkedin.com/in/fabrice-dufils-siyapdje-3b4a8288" target='_blank'>
           <img
