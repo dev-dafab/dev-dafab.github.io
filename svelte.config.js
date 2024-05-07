@@ -8,14 +8,12 @@ const config = {
   kit: {
     adapter: adapter({
       fallback: "404.html",
-      assets: "build",
-      pages: "build",
     }),
     alias: {
       $i18n: "src/i18n",
     },
     paths: {
-      base: Bun.argv.includes("dev") ? "" : process.env.BASE_PATH,
+      base: Bun.argv.includes("dev") ? "" : Bun.env.BASE_PATH,
     },
   },
 };
