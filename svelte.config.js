@@ -13,7 +13,8 @@ const config = {
       $i18n: "src/i18n",
     },
     paths: {
-      base: Bun.argv.includes("dev") ? "" : Bun.env.BASE_PATH,
+      // base: Bun.argv.includes("dev") ? "" : Bun.env.BASE_PATH,
+      base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
     },
   },
 };
