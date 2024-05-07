@@ -195,11 +195,14 @@
 	</div>
 </div>
 
-<style lang="postcss">
-	h2 {
-		@apply text-gray-600 uppercase font-semibold tracking-wider mb-1 mt-4;
-	}
-	.skill-set {
-		@apply bg-white rounded-lg border border-gray-500 text-center flex-1 my-3;
-	}
-</style>
+<!-- text-gray-600  -->
+<!-- tracking-wider -->
+
+<!-- <style lang="postcss"> -->
+<!-- 	h2 { -->
+<!-- 		@apply uppercase font-semibold  mb-1 mt-4; -->
+<!-- 	} -->
+<!-- 	.skill-set { -->
+<!-- 		@apply bg-white rounded-lg border border-gray-500 text-center flex-1 my-3; -->
+<!-- 	} -->
+<!-- </style> -->

@@ -1,26 +1,26 @@
-import { vitePreprocess } from '@sveltejs/kit/vite';
-import adapter from '@sveltejs/adapter-static';
-
-const dev = process.argv.includes('dev');
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import adapter from "@sveltejs/adapter-static";
+// import tailwindcss from '@tailwindcss/vite';
+//
+//
+console.log();
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte'],
-	preprocess: [vitePreprocess()],
+  preprocess: vitePreprocess(),
+  // vitePlugin: [tailwindcss()],
 
-	vitePlugin: {
-		inspector: true
-	},
-	kit: {
-		adapter: adapter({
-			fallback: '404.html'
-		}),
-		alias: {
-			$i18n: 'src/i18n'
-		},
-		paths: {
-			base: dev ? '' : process.env.BASE_PATH
-		}
-	}
+  kit: {
+    adapter: adapter({
+      fallback: "404.html",
+    }),
+    alias: {
+      $i18n: "src/i18n",
+    },
+    paths: {
+      base: Bun.argv.includes("dev") ? "" : process.env.BASE_PATH,
+    },
+  },
 };
+
 export default config;

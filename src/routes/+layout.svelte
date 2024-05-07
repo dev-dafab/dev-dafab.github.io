@@ -1,9 +1,8 @@
 <script lang="ts">
-	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import './styles.css';
 	import { onMount } from 'svelte';
 	import { onNavigate } from '$app/navigation';
-	import Header from './Header.svelte';
+	import Header from '$lib/ui/Header.svelte';
 
 	onNavigate(() => {
 		if (!document.startViewTransition) return;
@@ -25,6 +24,6 @@
 </script>
 
 <Header {navItems} />
-<main role="main" class="grid grid-cols-0 md:grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
+<main class="grid grid-cols-0 md:grid-cols-12 gab-6 container mx-auto py-[var(--header-height)]">
 	<slot />
 </main>

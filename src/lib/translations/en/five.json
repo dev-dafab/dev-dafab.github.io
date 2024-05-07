@@ -1,9 +1,0 @@
-{
-	"occupation": "Frontend developer",
-	"company": "8 pers. | 100% | automotive industry",
-	"title": "Fleet Management for buses",
-	"description": "As a programmer, I contributed to a project focused on bus fleet management. The project involved developing software to track and manage bus fleets, including scheduling, maintenance, and route planning. I worked on both the front-end and back-end development, building a user-friendly interface and integrating with various APIs and databases. The project aimed to increase efficiency and reduce costs for bus companies, while also improving the overall experience for riders. The success of the project was measured by increased on-time performance, improved vehicle maintenance, and higher customer satisfaction.",
-	"start": "2018-02-01",
-	"end": "2019-02-25",
-	"tags": ["reactjs", "typescript", "javascript", "java", "spring boot", "gitlab"]
-}
