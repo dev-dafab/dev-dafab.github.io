@@ -11,8 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Bun
+      - name: Setup Bun
         uses: oven-sh/setup-bun@v1
+
+      - name: Install Bun
         run: bun install
 
       - name: build
