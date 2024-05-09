@@ -4,6 +4,7 @@
 	import { onNavigate } from '$app/navigation';
 	import Header from '$lib/ui/Header.svelte';
 
+
 	onNavigate(() => {
 		if (!document.startViewTransition) return;
 

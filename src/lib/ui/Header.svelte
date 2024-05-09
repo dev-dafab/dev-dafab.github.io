@@ -48,7 +48,7 @@
 
 
 <!-- col-span-12 flex flex-col lg:flex-row justify-center gap-20 main-section -->
-<header class="fixed w-full z-10 top-0 min-h-12 flex items-center" class:bg-gray-100={scrollY > 76}>
+<header class="fixed w-full z-10 top-0 min-h-12 flex items-center p-6" class:bg-gray-100={scrollY > 76}>
 	<div class="w-full leading-normal container inline-flex justify-between mx-auto">
 		<p class="cursor-pointer font-bold text-[2rem]" href={homeUrl}>
 			Fabrice Dufils Siyapdje

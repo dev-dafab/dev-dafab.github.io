@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<section id="about" class="gap-8 my-8 flex flex-col lg:flex-row">
+<section id="about" class="gap-8 my-8 flex flex-col lg:flex-row p-6">
 				<div class="details-container">
 					<div class="w-full flex justify-around">
 						<img src="/experience.png" alt="Experience icon" class="cursor-pointer h-[2rem]" />
@@ -17,6 +17,7 @@
 					</div>
 					<h3 class="font-lg">Education</h3>
 					<p>B.Sc. Bachelors Degree<br /></p>
+					<p><br /></p>
 				</div>
 
 				<div class="details-container">
